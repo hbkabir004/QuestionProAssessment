@@ -2,11 +2,11 @@ import {
     createBrowserRouter,
 } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import Comments from "../pages/CommentsPage";
+import CommentsPage from "../pages/CommentsPage";
 import Dashboard from "../pages/DashboardPage";
 import HomePage from "../pages/HomePage";
 import MyComponent from "../pages/MyComponent";
-import Posts from "../pages/Posts";
+import PostsPage from "../pages/PostsPage";
 
 export const router = createBrowserRouter([
     {
@@ -23,12 +23,13 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         path: "posts",
-                        element: <Posts/>,
+                        element: <PostsPage/>,
                         loader: () => fetch(`https://jsonplaceholder.typicode.com/posts`)
                     },
                     {
                         path: "comments",
-                        element: <Comments/>,
+                        element: <CommentsPage/>,
+                        loader: () => fetch(`https://jsonplaceholder.typicode.com/comments`)
                     },
                 ]
             },

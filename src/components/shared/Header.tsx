@@ -18,7 +18,7 @@ const Header = () => {
 
             </NavLink>
             <NavLink
-                to="/dashboard/posts"
+                to="/dashboard"
                 className={({ isActive }) =>
                     `me-6 ${isActive ? "active" : ""}`
                 }
