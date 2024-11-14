@@ -25,3 +25,4 @@ dist-ssr
 firebase.init.js
 .firebaserc
 firebase.json
+.firebase/*
