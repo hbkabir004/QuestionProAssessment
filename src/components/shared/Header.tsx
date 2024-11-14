@@ -7,28 +7,37 @@ const Header = () => {
             <NavLink
                 to="/"
                 className={({ isActive }) =>
-                    `me-6 font-semibold text-xl ${isActive ? "active" : ""}`
+                    `me-6 ${isActive ? "active" : ""}`
                 }
             >
-                <MyButton btnname="Home" />
+                <MyButton
+                    btnname="Home"
+                    className="font-semibold text-lg"
+                />
 
 
             </NavLink>
             <NavLink
-                to="/dashboard"
+                to="/dashboard/posts"
                 className={({ isActive }) =>
-                    `me-6 font-semibold text-xl ${isActive ? "active" : ""}`
+                    `me-6 ${isActive ? "active" : ""}`
                 }
             >
-                <MyButton btnname="Dashboard" />
+                <MyButton
+                    btnname="Dashboard"
+                    className="font-semibold text-lg"
+                />
             </NavLink>
             <NavLink
                 to="/my-component"
                 className={({ isActive }) =>
-                    `me-6 font-semibold text-xl ${isActive ? "active" : ""}`
+                    `me-6 ${isActive ? "active" : ""}`
                 }
             >
-                <MyButton btnname="My Component" />
+                <MyButton
+                    btnname="My Component"
+                    className="font-semibold text-lg"
+                />
 
             </NavLink>
         </div>

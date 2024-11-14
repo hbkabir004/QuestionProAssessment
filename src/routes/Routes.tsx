@@ -24,6 +24,7 @@ export const router = createBrowserRouter([
                     {
                         path: "posts",
                         element: <Posts/>,
+                        loader: () => fetch(`https://jsonplaceholder.typicode.com/posts`)
                     },
                     {
                         path: "comments",

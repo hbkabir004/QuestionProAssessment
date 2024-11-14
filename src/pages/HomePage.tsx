@@ -2,7 +2,7 @@ function HomePage() {
 
   return (
     <div>
-      <h1>Question Pro Assessment</h1>
+      <h1 className="text-4xl font-bold">Question Pro React Assessment</h1>
     </div>
   )
 }

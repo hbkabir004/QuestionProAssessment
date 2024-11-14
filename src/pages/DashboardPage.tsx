@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { MyButton } from "../components/shared/Button";
 
 const Dashboard = () => {
     return (
@@ -7,23 +8,27 @@ const Dashboard = () => {
                 <NavLink
                     to="/dashboard/posts"
                     className={({ isActive }) =>
-                    `me-6 font-semibold text-lg ${isActive ? "active" : ""}`
-                }
-                    >
-                    Posts
+                        `me-6 ${isActive ? "active" : ""}`
+                    }
+                >
+                    <MyButton
+                        btnname="Post"
+                        className="font-semibold text-lg" />
                 </NavLink>
 
                 <NavLink
                     to="/dashboard/comments"
                     className={({ isActive }) =>
-                    `me-6 font-semibold text-lg ${isActive ? "active" : ""}`
-                }
+                        `me-6 ${isActive ? "active" : ""}`
+                    }
                 >
-                    Comments
+                    <MyButton
+                        btnname="Comments"
+                        className="font-semibold text-lg" />
                 </NavLink>
 
             </div>
-            <Outlet/>
+            <Outlet />
         </div>
     );
 };
