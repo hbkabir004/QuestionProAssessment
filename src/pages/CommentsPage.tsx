@@ -22,7 +22,7 @@ const CommentsPage = () => {
     }, [selectedPostId, allComments]);
 
     return (
-        <div className="md:me-[50rem]">
+        <div className="md:me-[10rem]">
             <div className="my-5 flex justify-between">
                 <h1 className="text-2xl font-bold">Comments</h1>
                 <SelectComponent

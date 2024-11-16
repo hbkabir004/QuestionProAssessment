@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { MyButton } from "./Button";
+import { MyButton } from "./MyButton";
 
 const Header = () => {
     return (

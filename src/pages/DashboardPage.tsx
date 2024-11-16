@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { MyButton } from "../components/shared/Button";
+import { MyButton } from "../components/shared/MyButton";
 import SideNav from "../components/shared/SideNav";
 
 const Dashboard = () => {

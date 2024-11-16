@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../main";
+import { MyComponentProps } from "../../models/card";
 
-const SideNav = ({ children }: any) => {
+const SideNav = ({ children }: MyComponentProps) => {
     const { user } = useContext(UserContext); // Access user context
 
     return (

@@ -23,3 +23,7 @@ export type SelectComponentProps = {
   placeholder: string;            // Placeholder text for the select component
   onSelect: (id: number | null) => void; // Callback to handle selection
 };
+
+export type MyComponentProps = {
+  children: React.ReactNode;
+}

@@ -23,7 +23,7 @@ const PostsPage = () => {
     }, [selectedUserId, allPosts]);
 
     return (
-        <div className="md:me-[50rem]">
+        <div className="md:me-[10rem]">
             <div className="my-5 flex justify-between">
                 <h1 className="text-2xl font-bold">Posts</h1>
                 <SelectComponent

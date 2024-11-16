@@ -5,7 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 import CommentsPage from "../pages/CommentsPage";
 import Dashboard from "../pages/DashboardPage";
 import HomePage from "../pages/HomePage";
-import MyComponent from "../pages/MyComponent";
+import MyComponentPage from "../pages/MyComponentPage";
 import PostsPage from "../pages/PostsPage";
 import UserFormPage from "../pages/UserFormPage";
 
@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/my-component",
-                element: <MyComponent/>,
+                element: <MyComponentPage/>,
             },
             {
                 path: "/user",
