@@ -7,6 +7,7 @@ import Dashboard from "../pages/DashboardPage";
 import HomePage from "../pages/HomePage";
 import MyComponent from "../pages/MyComponent";
 import PostsPage from "../pages/PostsPage";
+import UserFormPage from "../pages/UserFormPage";
 
 export const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
             {
                 path: "/my-component",
                 element: <MyComponent/>,
+            },
+            {
+                path: "/user",
+                element: <UserFormPage/>,
             },
         ]
     },

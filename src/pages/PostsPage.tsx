@@ -35,11 +35,10 @@ const PostsPage = () => {
                 />
             </div>
 
-            <div>
-                {filteredPosts.map((post: CardProps) => (
-                    <PostCard key={post.id} post={post} />
-                ))}
-            </div>
+
+            {filteredPosts.map((post: CardProps) => (
+                <PostCard key={post.id} post={post} />
+            ))}
         </div>
     );
 };
